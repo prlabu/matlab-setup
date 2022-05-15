@@ -1,0 +1,6 @@
+function [val, cnt] = uniq_c(S)
+  [U, IA, IC] = unique(S);
+
+  for i = 1:length(IA)
+  
+end

@@ -1,6 +1,7 @@
 function hF = custom_legend(labels, colors)
 
-hF = figure('position', [1000         656         392         393]); 
+hF = figure('position', [440   606   296   192]); 
+% hF = figure();
 
 hA = axes(hF, 'position', [0.1 0.1 0.5 0.9]); 
 axes(hA); hold on;
@@ -8,8 +9,8 @@ set(hA, 'xcolor', 'none', 'ycolor', 'none');
 c = colors; % color
 l = labels; % label
 m = 0.9; % margin factr
-assert(length(c)==length(l));
-for i = 1:length(c)
+assert(size(c, 1)==length(l));
+for i = 1:length(l)
     if any(isnan(c(i, :)))
         rectangle(hA, 'position', [-1, -i, 1*m, 1*m], 'facecolor', 'none', 'edgecolor', 'none');
         text(hA, 0, -i+0.5, ['  ' l{i}], 'fontsize', 24, ...

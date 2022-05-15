@@ -165,7 +165,7 @@ for ii = 1:length(X0)
     end
     
     if is_paired_data && ii==2    
-       clr = [0.5 0.5 0.5 0.3]; 
+       clr = [0.5 0.5 0.5 0.2]; 
        fAlpha = 0.2; 
        for iobs = 1:length(X0{2})
           plot([drops_pos{ii-1}(iobs) drops_pos{ii}(iobs)], [X0{1}(iobs) X0{2}(iobs)], ...
@@ -174,8 +174,10 @@ for ii = 1:length(X0)
 
        % move lines to back
        hA = gca;
-       hL = findobj(hA, 'Type','line');
-       uistack(hL, 'bottom');
+       hL = findobj('Type','line');
+       hS = findobj('Type','scatter');
+       h = findobj('-not',prop2,value2,'-property',prop3)
+       set(hA, 'Children', [hS; hL]);
     end
     
     
