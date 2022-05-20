@@ -1,7 +1,7 @@
 git clone https://github.com/altmany/export_fig.git
 echo "export_fig/" >> .gitignore
 
-git glone https://github.com/scottclowe/cbrewer2.git
+git clone https://github.com/scottclowe/cbrewer2.git
 echo "cbrewer2/" >> .gitignore
 
 git clone https://github.com/raacampbell/sigstar.git
