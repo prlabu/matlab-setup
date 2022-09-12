@@ -10,3 +10,5 @@ echo "sigstar/" >> .gitignore
 git clone https://github.com/RainCloudPlots/RainCloudPlots.git
 echo "RainCloudPlots/" >> .gitignore
 
+git clone https://github.com/MartinKoch123/Path.git
+echo "Path/" >> .gitignore
