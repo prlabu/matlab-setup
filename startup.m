@@ -19,15 +19,23 @@
 
 % set defulat 
 datetime.setDefaultFormats('defaultdate','yyyyMMdd');
+datetime.setDefaultFormats('default','yyyyMMddHH'); 
 
-set(0,'defaultAxesFontSize', 20);
+
+set(0,'defaultAxesFontSize', 16);
 set(0,'defaultfigurecolor',[1 1 1]);
 
 set(0, 'DefaultFigureRenderer', 'painters');
 
-set(groot, 'defaultAxesTickLabelInterpreter','none'); 
-set(groot, 'defaultLegendInterpreter','none');
-% 
+set(groot, 'defaultAxesTickLabelInterpreter','factory'); % latex, none
+set(groot, 'defaultLegendInterpreter','factory'); % latex, none
+
+util_path = "Y:\Users\lbullock\matlab-util";
+if exist(util_path, 'dir')
+    addpath(genpath(util_path))
+end
+
+
 % % addpath(genpath('/Volumes/Sector4/Users/Latane/std_latane'));
 % 
 % environment_setup();
