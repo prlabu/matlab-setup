@@ -19,7 +19,7 @@
 
 % set defulat 
 datetime.setDefaultFormats('defaultdate','yyyyMMdd');
-datetime.setDefaultFormats('default','yyyyMMddHH'); 
+datetime.setDefaultFormats('default','yyyyMMddHHmm'); 
 
 
 set(0,'defaultAxesFontSize', 16);

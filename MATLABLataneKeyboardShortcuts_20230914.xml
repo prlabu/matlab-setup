@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomKeySet derivedfrom="Mac" modifieddefault="false">
+   <Context id="Global">
+      <Action id="evaluate-selection">
+         <Stroke code="VK_R" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="eval-cell-and-advance">
+         <Stroke code="VK_ENTER" meta="on" shift="on" sysctrl="on"/>
+      </Action>
+      <Action id="comment">
+         <Stroke code="VK_SLASH" meta="on" sysctrl="on"/>
+         <Stroke code="VK_2" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="duplicate-record"/>
+      <Action id="uncomment">
+         <Stroke code="VK_T" meta="on" sysctrl="on"/>
+         <Stroke code="VK_1" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="collapse-all-folds">
+         <Stroke code="VK_EQUALS" meta="on" sysctrl="on"/>
+         <Stroke code="VK_OPEN_BRACKET" meta="on" shift="on" sysctrl="on"/>
+      </Action>
+      <Action id="collapse-fold">
+         <Stroke code="VK_PERIOD" meta="on" sysctrl="on"/>
+         <Stroke code="VK_OPEN_BRACKET" meta="on" sysctrl="on"/>
+      </Action>
+      <Action id="expand-fold">
+         <Stroke code="VK_PERIOD" meta="on" shift="on" sysctrl="on"/>
+         <Stroke code="VK_CLOSE_BRACKET" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="VariableEditor">
+      <Action id="open-selection">
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="CommandWindow">
+      <Action id="open-selection">
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="Explorer">
+      <Action follows="None" id="open-selection">
+         <Stroke code="VK_DOWN" meta="on" sysctrl="on"/>
+         <Stroke code="VK_KP_DOWN" meta="on" sysctrl="on"/>
+         <Stroke code="VK_D" meta="on" shift="on" sysctrl="on"/>
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="CommandHistory">
+      <Action id="evaluate-selection"/>
+   </Context>
+   <Context id="Project">
+      <Action id="open-selection">
+         <Stroke code="VK_DOWN" meta="on" sysctrl="on"/>
+         <Stroke code="VK_KP_DOWN" meta="on" sysctrl="on"/>
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="HTMLRenderer">
+      <Action id="open-selection">
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="MATLABEditor">
+      <Action id="open-selection">
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+   <Context id="Recordlist">
+      <Action id="open-selection">
+         <Stroke code="VK_D" meta="on" sysctrl="on"/>
+      </Action>
+   </Context>
+</CustomKeySet>
