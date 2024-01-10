@@ -27,7 +27,8 @@ plot(opts.hA, t, y, 'Color', color, ...
         'HandleVisibility', 'on', ...
         'DisplayName', opts.DisplayName); hold on;
 
-if sum(isnan(inBetween))>0; warning("NaNs detected in bounded line. MATLAB won't plot NaNs"); end 
+if sum(isnan(inBetween))>0; warning("NaNs detected in bounded line. MATLAB won't plot NaNs"); end
+
 fill(opts.hA, x2, inBetween, color, ...
         'FaceAlpha', 0.3, ...
         'LineStyle','none', ...
@@ -50,7 +51,7 @@ end
 ylim(yl);
 xlim(opts.hA, [t(1) t(end)]);
 ylabel(opts.hA,'% BGA');
-xlabel(opts.hA, 'time (ms)');
+xlabel(opts.hA, 'Time [s]');
 
 
 

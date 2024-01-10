@@ -1,20 +1,24 @@
-% %------------ FreeSurfer -----------------------------%
-% fshome = getenv('FREESURFER_HOME');
-% fsmatlab = sprintf('%s/matlab',fshome);
-% if (exist(fsmatlab) == 7)
-%     addpath(genpath(fsmatlab));
-% end
-% clear fshome fsmatlab;
-% %-----------------------------------------------------%
-% 
-% %------------ FreeSurfer FAST ------------------------%
-% fsfasthome = getenv('FSFAST_HOME');
-% fsfasttoolbox = sprintf('%s/toolbox',fsfasthome);
-% if (exist(fsfasttoolbox) == 7)
-%     path(path,fsfasttoolbox);
-% end
-% clear fsfasthome fsfasttoolbox;
-% %-----------------------------------------------------%
+
+
+%------------ FreeSurfer -----------------------------%
+fshome = getenv('FREESURFER_HOME');
+fsmatlab = sprintf('%s/matlab',fshome);
+if (exist(fsmatlab) == 7)
+    addpath(genpath(fsmatlab));
+end
+clear fshome fsmatlab;
+%-----------------------------------------------------%
+
+%------------ FreeSurfer FAST ------------------------%
+fsfasthome = getenv('FSFAST_HOME');
+fsfasttoolbox = sprintf('%s/toolbox',fsfasthome);
+if (exist(fsfasttoolbox) == 7)
+    path(path,fsfasttoolbox);
+end
+clear fsfasthome fsfasttoolbox;
+%-----------------------------------------------------%
+
+
 
 
 % set defulat 
@@ -28,7 +32,7 @@ set(0,'defaultfigurecolor',[1 1 1]);
 set(0, 'DefaultFigureRenderer', 'painters');
 
 set(groot, 'defaultAxesTickLabelInterpreter','factory'); % latex, none
-set(groot, 'defaultLegendInterpreter','factory'); % latex, none
+set(groot, 'defaultLegendInterpreter', 'none'); % latex, none
 
 util_path = "Y:\Users\lbullock\matlab-util";
 if exist(util_path, 'dir')
