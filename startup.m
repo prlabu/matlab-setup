@@ -1,25 +1,29 @@
-% %------------ FreeSurfer -----------------------------%
-% fshome = getenv('FREESURFER_HOME');
-% fsmatlab = sprintf('%s/matlab',fshome);
-% if (exist(fsmatlab) == 7)
-%     addpath(genpath(fsmatlab));
-% end
-% clear fshome fsmatlab;
-% %-----------------------------------------------------%
-% 
-% %------------ FreeSurfer FAST ------------------------%
-% fsfasthome = getenv('FSFAST_HOME');
-% fsfasttoolbox = sprintf('%s/toolbox',fsfasthome);
-% if (exist(fsfasttoolbox) == 7)
-%     path(path,fsfasttoolbox);
-% end
-% clear fsfasthome fsfasttoolbox;
-% %-----------------------------------------------------%
+
+
+%------------ FreeSurfer -----------------------------%
+fshome = getenv('FREESURFER_HOME');
+fsmatlab = sprintf('%s/matlab',fshome);
+if (exist(fsmatlab) == 7)
+    addpath(genpath(fsmatlab));
+end
+clear fshome fsmatlab;
+%-----------------------------------------------------%
+
+%------------ FreeSurfer FAST ------------------------%
+fsfasthome = getenv('FSFAST_HOME');
+fsfasttoolbox = sprintf('%s/toolbox',fsfasthome);
+if (exist(fsfasttoolbox) == 7)
+    path(path,fsfasttoolbox);
+end
+clear fsfasthome fsfasttoolbox;
+%-----------------------------------------------------%
+
+
 
 
 % set defulat 
 datetime.setDefaultFormats('defaultdate','yyyyMMdd');
-datetime.setDefaultFormats('default','yyyyMMddHH'); 
+datetime.setDefaultFormats('default','yyyyMMddHHmm'); 
 
 
 set(0,'defaultAxesFontSize', 16);
@@ -30,7 +34,7 @@ set(0, 'DefaultFigureRenderer', 'opengl');
 
 
 set(groot, 'defaultAxesTickLabelInterpreter','factory'); % latex, none
-set(groot, 'defaultLegendInterpreter','factory'); % latex, none
+set(groot, 'defaultLegendInterpreter', 'none'); % latex, none
 
 util_path = "Y:\Users\lbullock\matlab-util";
 if exist(util_path, 'dir')
