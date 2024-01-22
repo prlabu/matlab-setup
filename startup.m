@@ -25,7 +25,9 @@ datetime.setDefaultFormats('default','yyyyMMddHH');
 set(0,'defaultAxesFontSize', 16);
 set(0,'defaultfigurecolor',[1 1 1]);
 
-set(0, 'DefaultFigureRenderer', 'painters');
+% set(0, 'DefaultFigureRenderer', 'painters');
+set(0, 'DefaultFigureRenderer', 'opengl');
+
 
 set(groot, 'defaultAxesTickLabelInterpreter','factory'); % latex, none
 set(groot, 'defaultLegendInterpreter','factory'); % latex, none
