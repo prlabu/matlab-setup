@@ -29,12 +29,13 @@ classdef DynPath < Path
     
     methods
         % Constructor
-        function obj = DynPath(pathPattern)
+        function obj = DynPath(pathPattern, variable, value)
             % Call the constructor of the base class
             obj@Path(pathPattern);
             
             % Initialize the dynamic variables map
             obj.dynamicVariables = containers.Map;
+            obj = obj.set(variable, value); 
         end
         
         % Method to set dynamic variables
