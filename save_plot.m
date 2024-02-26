@@ -42,6 +42,11 @@ if opts.isPDF
     exportgraphics(opts.hF, [file.Folder file.Name '.pdf']);
 end
 
+if opts.isEPS
+    file.Ext = '';
+    exportgraphics(opts.hF, [file.Folder file.Name '.eps']);
+end
+
 
 file.Ext = '';
 export_fig([file.Folder file.Name], '-m3', opts.hF);

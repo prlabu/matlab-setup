@@ -48,7 +48,7 @@ end
 
 
 
-ylim(yl);
+ylim(yl*1.1);
 xlim(opts.hA, [t(1) t(end)]);
 ylabel(opts.hA,'% BGA');
 xlabel(opts.hA, 'Time [s]');
